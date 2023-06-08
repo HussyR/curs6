@@ -13,7 +13,7 @@ public class TableOrder {
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Integer id;
     private String time;
-    private String numberOfPersons;
+    private Integer numberOfPersons;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
